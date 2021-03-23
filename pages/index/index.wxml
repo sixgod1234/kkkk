@@ -1,0 +1,23 @@
+<view class="container">
+  <!-- 初始图 -->
+  <view class="imgsBG {{isDoudong?'doudong':''}}"  style="background: url(' https://img.hxyxyz.top/images/2021/03/23/2.png') 49% 90% no-repeat;background-size:44.5% 44.2%;display:{{isShow === 0 ? 'block' : 'none'}}">
+  </view>
+  <!-- 2-4 -->
+  <view  class="imgsBG" style="background: url('https://img.hxyxyz.top/images/2021/03/23/2-4-x.png') 49.8% 89.2% no-repeat;background-size:43.5% 42%;display:{{isShow === 1 ? 'block' : 'none'}}">
+  </view>
+  <!-- 5-7 -->
+  <view class="imgsBG" style="background: url('https://img.hxyxyz.top/images/2021/03/23/5-7-x.png') 37.8% 89% no-repeat;background-size:54.5% 41.8%;display:{{isShow === 2 ? 'block' : 'none'}}">
+  </view>
+  <!-- 7-9 -->
+  <view class="imgsBG" style="background: url('https://img.hxyxyz.top/images/2021/03/23/7-9-x.png') 37.8% 89% no-repeat;background-size:54.4% 42%;display:{{isShow === 3 ? 'block' : 'none'}}">
+  </view>
+  <!-- 9-12 -->
+  <view class="imgsBG" style="background: url('https://img.hxyxyz.top/images/2021/03/23/9-12-x.png') 30% 89% no-repeat;background-size:71.2% 43.5%;display:{{isShow === 4 ? 'block' : 'none'}}">
+  </view>
+
+    <!-- 骰子 -->
+    <view class="imgs" data-isShow="{{isShow}}" bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"     
+          style="background: url('https://img.hxyxyz.top/images/2021/03/23/21942299424de2b2e6562e19a0fa4eb8.png') 53% 17% no-repeat;background-size:45% 45%">
+    </view>
+</view>
